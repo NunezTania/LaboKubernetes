@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: frontend
   labels:
-    component: api
+    component: frontend
     app: todo
 spec:
   containers:
-  - name: api
+  - name: frontend
     image: icclabcna/ccp2-k8s-todo-frontend
     ports:
     - containerPort: 8080
